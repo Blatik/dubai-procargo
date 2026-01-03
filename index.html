@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Procargo - Комплексная логистика и рост бизнеса в Дубае. Склад в Дубае, таможенное оформление ОАЭ, фулфилмент, консалтинг и сертификация товаров.">
+    <meta name="keywords"
+        content="склад Дубай, таможня ОАЭ, фулфилмент Дубай, регистрация товара Дубай, логистика ОАЭ, консалтинг Дубай, складское хранение Дубай">
+    <title>Procargo - Склад в Дубае | Таможенное Оформление | Фулфилмент ОАЭ</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+        }
+
+        .gradient-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5b1 100%);
+        }
+
+        .gradient-blue {
+            background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5b1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-blue {
+            background: linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #d4af37 0%, #f4e5b1 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(14, 165, 233, 0.4);
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 50%);
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #d4af37 50%, transparent 100%);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .float-animation {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .sticky-header {
+            backdrop-filter: blur(10px);
+            background-color: rgba(10, 10, 10, 0.9);
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 56px;
+                height: 56px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-950 text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 sticky-header border-b border-zinc-800">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-gold rounded-lg flex items-center justify-center">
+                        <i data-lucide="package" class="w-6 h-6 text-zinc-950"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gradient-gold">Procargo</span>
+                </div>
+
+                <!-- Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-zinc-300 hover:text-white transition-colors">Услуги</a>
+                    <a href="#warehouse" class="text-zinc-300 hover:text-white transition-colors">Склад</a>
+                    <a href="#consulting" class="text-zinc-300 hover:text-white transition-colors">Консалтинг</a>
+                    <a href="#contacts" class="text-zinc-300 hover:text-white transition-colors">Контакты</a>
+                    <a href="#quote" class="btn-primary px-6 py-2 rounded-lg text-zinc-950 font-semibold">
+                        Получить предложение
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden mt-4 pb-4 space-y-3" id="mobile-menu">
+                <a href="#services" class="block text-zinc-300 hover:text-white transition-colors">Услуги</a>
+                <a href="#warehouse" class="block text-zinc-300 hover:text-white transition-colors">Склад</a>
+                <a href="#consulting" class="block text-zinc-300 hover:text-white transition-colors">Консалтинг</a>
+                <a href="#contacts" class="block text-zinc-300 hover:text-white transition-colors">Контакты</a>
+                <a href="#quote" class="btn-primary px-6 py-2 rounded-lg text-zinc-950 font-semibold inline-block">
+                    Получить предложение
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    Комплексная логистика и <span class="text-gradient-gold">рост бизнеса</span> в Дубае
+                </h1>
+                <p class="text-xl md:text-2xl text-zinc-400 mb-8">
+                    Таможня, выполнение заказов и консалтинг — всё в одном месте
+                </p>
+                <p class="text-lg text-zinc-500 mb-12 max-w-2xl mx-auto">
+                    Профессиональные решения для e-commerce, брендов и предпринимателей. От складского хранения до
+                    финансовых услуг — ваш надёжный партнёр в ОАЭ
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="#quote"
+                        class="btn-primary px-8 py-4 rounded-lg text-zinc-950 font-bold text-lg w-full sm:w-auto">
+                        Начать сейчас
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">24/7</div>
+                        <div class="text-sm text-zinc-500">Поддержка</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">1000+</div>
+                        <div class="text-sm text-zinc-500">Клиентов</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">99.8%</div>
+                        <div class="text-sm text-zinc-500">Точность</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl md:text-4xl font-bold text-gradient-gold mb-2">GCC</div>
+                        <div class="text-sm text-zinc-500">Покрытие</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Наши <span class="text-gradient-gold">услуги</span>
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Комплексные решения для вашего бизнеса в ОАЭ
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1: Warehouse -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                    <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="warehouse" class="w-8 h-8 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Склад в Дубае</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Современное складское помещение класса А с полным контролем температуры, безопасности и
+                        логистики. Оптимальные условия хранения вашей продукции.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Класс А складские помещения
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            24/7 видеонаблюдение
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Контроль температуры и влажности
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2: Customs -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                    <div class="w-16 h-16 gradient-blue rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="file-check" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Таможенное оформление</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Профессиональное таможенное оформление в ОАЭ. Решаем все сложности с документацией,
+                        декларированием и сертификацией товаров.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Полное таможенное оформление
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Подготовка документации
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Консультации по таможенным вопросам
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3: Fulfillment -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                    <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="box" class="w-8 h-8 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Фулфилмент</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Pick & Pack услуги, готовые к электронной коммерции. Полный цикл обработки заказов от приёма до
+                        отправки клиенту.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Pick & Pack операции
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Интеграция с e-commerce
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Управление запасами
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4: Consulting -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                    <div class="w-16 h-16 gradient-blue rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="briefcase" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Консалтинг и сертификация</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Регистрация товара, юридическое сопровождение и бизнес-консалтинг. Полная поддержка на всех
+                        этапах выхода на рынок ОАЭ.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Регистрация товаров
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Юридическое сопровождение
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Бизнес-консультации
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5: Delivery -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                    <div class="w-16 h-16 gradient-gold rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="truck" class="w-8 h-8 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Доставка и упаковка</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Глобальная и локальная логистика. Доставка по ОАЭ, Саудовской Аравии и всему региону GCC с
+                        полным трекингом.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Доставка по GCC
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Профессиональная упаковка
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Отслеживание в реальном времени
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6: Financial -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-8">
+                    <div class="w-16 h-16 gradient-blue rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="banknote" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Финансовые услуги</h3>
+                    <p class="text-zinc-400 mb-6">
+                        Вывод средств, легальные способы оплаты и финансовая отчётность. Financial Compliance и Legal
+                        Money Transfer.
+                    </p>
+                    <ul class="space-y-2 text-sm text-zinc-500">
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Легальный перевод средств
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Финансовая отчётность
+                        </li>
+                        <li class="flex items-center">
+                            <i data-lucide="check" class="w-4 h-4 text-green-500 mr-2"></i>
+                            Compliance поддержка
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Benefits Section -->
+    <section id="warehouse" class="py-20 md:py-32 bg-zinc-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Почему <span class="text-gradient-gold">Дубай?</span> Почему <span
+                        class="text-gradient-blue">мы?</span>
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Стратегические преимущества и профессиональный подход
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="zap" class="w-10 h-10 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Скорость</h3>
+                    <p class="text-zinc-400">
+                        Экспресс-обработка заказов и таможенное оформление за 24-48 часов. Минимальное время от запроса
+                        до доставки.
+                    </p>
+                </div>
+
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 gradient-blue rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="shield-check" class="w-10 h-10 text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Безопасность</h3>
+                    <p class="text-zinc-400">
+                        Полная юридическая поддержка, страхование грузов и защита ваших интересов на всех этапах
+                        сотрудничества.
+                    </p>
+                </div>
+
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 gradient-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="headphones" class="w-10 h-10 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Встроенная поддержка</h3>
+                    <p class="text-zinc-400">
+                        Персональный менеджер, русскоязычная поддержка 24/7 и полное операционное сопровождение вашего
+                        бизнеса.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Additional Benefits -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 md:p-12">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gradient-gold">Преимущества Дубая</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Стратегическое расположение между Европой и Азией</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Нулевой налог на прибыль для большинства бизнесов</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Современная инфраструктура и логистические хабы мирового
+                                    класса</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Доступ к рынкам GCC с населением 50+ млн</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gradient-blue">Почему Procargo</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Официальная работа в ОАЭ и КСА с полным пакетом
+                                    лицензий</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Интеграция через API с вашими CRM и маркетплейсами</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Прозрачная финансовая отчётность и регулярные выплаты</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle"
+                                    class="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0"></i>
+                                <span class="text-zinc-300">Опыт работы с e-commerce, CPA и корпоративными
+                                    клиентами</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Geography Section -->
+    <section class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    География <span class="text-gradient-gold">работы</span>
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-3xl mx-auto">
+                    Там, где формируются рынки, мы выстраиваем систему. Работаем в зоне роста — GCC.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
+                <!-- UAE -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">ОАЭ</h3>
+                    <p class="text-sm text-zinc-500">UAE</p>
+                </div>
+
+                <!-- KSA -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 gradient-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">КСА</h3>
+                    <p class="text-sm text-zinc-500">KSA</p>
+                </div>
+
+                <!-- Oman -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Оман</h3>
+                    <p class="text-sm text-zinc-500">OMAN</p>
+                </div>
+
+                <!-- Bahrain -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 gradient-blue rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Бахрейн</h3>
+                    <p class="text-sm text-zinc-500">BAHRAIN</p>
+                </div>
+
+                <!-- Kuwait -->
+                <div class="card-hover bg-zinc-900 border border-zinc-800 rounded-2xl p-6 text-center">
+                    <div class="w-16 h-16 gradient-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-zinc-950"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Кувейт</h3>
+                    <p class="text-sm text-zinc-500">KUWAIT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Process Section -->
+    <section id="consulting" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Как мы <span class="text-gradient-gold">работаем</span>
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Простой процесс от запроса до доставки
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Vertical Line -->
+                    <div
+                        class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-zinc-800 via-zinc-700 to-zinc-800 transform md:-translate-x-1/2">
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="relative mb-16 md:mb-24">
+                        <div class="flex flex-col md:flex-row items-start md:items-center">
+                            <div class="flex items-start md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                                <div class="md:order-2">
+                                    <div
+                                        class="inline-block w-16 h-16 gradient-gold rounded-full flex items-center justify-center mb-4 md:ml-auto">
+                                        <span class="text-2xl font-bold text-zinc-950">1</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold mb-3">Консультация и анализ</h3>
+                                    <p class="text-zinc-400">
+                                        Вы оставляете заявку, мы анализируем ваш бизнес и предлагаем оптимальное
+                                        решение. Обсуждаем детали, рассчитываем стоимость и сроки.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block w-1/2"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative mb-16 md:mb-24">
+                        <div class="flex flex-col md:flex-row items-start md:items-center">
+                            <div class="hidden md:block w-1/2"></div>
+                            <div class="flex items-start md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                                <div>
+                                    <div
+                                        class="inline-block w-16 h-16 gradient-blue rounded-full flex items-center justify-center mb-4">
+                                        <span class="text-2xl font-bold text-white">2</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold mb-3">Оформление и подготовка</h3>
+                                    <p class="text-zinc-400">
+                                        Подписываем договор, готовим все необходимые документы для таможни, оформляем
+                                        сертификаты и лицензии. Организуем доставку груза на наш склад.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="flex flex-col md:flex-row items-start md:items-center">
+                            <div class="flex items-start md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                                <div class="md:order-2">
+                                    <div
+                                        class="inline-block w-16 h-16 gradient-gold rounded-full flex items-center justify-center mb-4 md:ml-auto">
+                                        <span class="text-2xl font-bold text-zinc-950">3</span>
+                                    </div>
+                                    <h3 class="text-2xl font-bold mb-3">Выполнение и доставка</h3>
+                                    <p class="text-zinc-400">
+                                        Обрабатываем заказы, пакуем товар и организуем доставку. Вы получаете полный
+                                        трекинг, финансовую отчётность и поддержку на всех этапах.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block w-1/2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FAQ Section -->
+    <section class="py-20 md:py-32 bg-zinc-900/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                    Частые <span class="text-gradient-gold">вопросы</span>
+                </h2>
+                <p class="text-xl text-zinc-400 max-w-2xl mx-auto">
+                    Ответы на то, что важно до начала
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Сколько нужно денег для старта продаж в ОАЭ или КСА?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        Минимальный бюджет зависит от вашей ниши и объёмов. Для e-commerce проектов можно начать от
+                        $5,000-10,000, включая первый завоз товара, таможенное оформление и складские услуги. Мы поможем
+                        оптимизировать расходы под ваш бюджет.
+                    </p>
+                </details>
+
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Можно ли начать без лицензии?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        Да, мы предлагаем решения для работы через нашу инфраструктуру. Вы можете тестировать рынок и
+                        масштабировать бизнес, пока готовите собственную лицензию. Мы также поможем с регистрацией
+                        компании, когда вы будете готовы.
+                    </p>
+                </details>
+
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Какие налоги я буду платить?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        В ОАЭ нет налога на прибыль для большинства бизнесов в свободных зонах. Есть только 5% НДС на
+                        товары и услуги. Мы предоставляем полную консультацию по налоговым вопросам и помогаем с
+                        оптимизацией.
+                    </p>
+                </details>
+
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Обязательно ли сертифицировать товары?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        Зависит от категории товара. Электроника, косметика, пищевые продукты и некоторые другие
+                        категории требуют обязательной сертификации. Мы поможем определить требования для вашей
+                        продукции и организуем весь процесс сертификации.
+                    </p>
+                </details>
+
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Вы работаете в ОАЭ и КСА официально?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        Да, мы имеем все необходимые лицензии и разрешения для работы в ОАЭ и Саудовской Аравии. Наша
+                        компания зарегистрирована официально, и мы работаем в полном соответствии с местным
+                        законодательством.
+                    </p>
+                </details>
+
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Что делать, если я не говорю по-английски?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        Не проблема! Наша команда говорит по-русски, по-украински и по-английски. Мы обеспечиваем полную
+                        поддержку на вашем языке и берём на себя всю коммуникацию с местными органами и партнёрами.
+                    </p>
+                </details>
+
+                <details class="bg-zinc-900 border border-zinc-800 rounded-xl p-6 group">
+                    <summary class="font-bold text-lg cursor-pointer list-none flex items-center justify-between">
+                        <span>Кто занимается лидогенерацией?</span>
+                        <i data-lucide="chevron-down"
+                            class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <p class="text-zinc-400 mt-4">
+                        Лидогенерация — это ваша ответственность. Мы фокусируемся на логистике, фулфилменте и
+                        операционной поддержке. Однако мы можем порекомендовать проверенных партнёров по маркетингу и
+                        помочь с интеграцией ваших рекламных каналов.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact Form Section -->
+    <section id="quote" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4">
+                        Получите <span class="text-gradient-gold">ценовое предложение</span>
+                    </h2>
+                    <p class="text-xl text-zinc-400">
+                        Заполните форму, и мы свяжемся с вами в течение 24 часов
+                    </p>
+                </div>
+
+                <form class="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 md:p-12 space-y-6" id="contact-form">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-zinc-300">Имя *</label>
+                            <input type="text" required
+                                class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-600 transition-colors"
+                                placeholder="Ваше имя">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2 text-zinc-300">Телефон *</label>
+                            <input type="tel" required
+                                class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-600 transition-colors"
+                                placeholder="+971 XX XXX XXXX">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-zinc-300">Email *</label>
+                        <input type="email" required
+                            class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-600 transition-colors"
+                            placeholder="your@email.com">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-zinc-300">Тип бизнеса</label>
+                        <select
+                            class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-600 transition-colors">
+                            <option>E-commerce</option>
+                            <option>Бренд/Производитель</option>
+                            <option>CPA/Digital агентство</option>
+                            <option>Оптовая торговля</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-zinc-300">Какие услуги вас интересуют?</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox"
+                                    class="w-4 h-4 text-yellow-600 bg-zinc-950 border-zinc-700 rounded focus:ring-yellow-600">
+                                <span class="ml-2 text-zinc-300">Складское хранение</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox"
+                                    class="w-4 h-4 text-yellow-600 bg-zinc-950 border-zinc-700 rounded focus:ring-yellow-600">
+                                <span class="ml-2 text-zinc-300">Таможенное оформление</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox"
+                                    class="w-4 h-4 text-yellow-600 bg-zinc-950 border-zinc-700 rounded focus:ring-yellow-600">
+                                <span class="ml-2 text-zinc-300">Фулфилмент</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox"
+                                    class="w-4 h-4 text-yellow-600 bg-zinc-950 border-zinc-700 rounded focus:ring-yellow-600">
+                                <span class="ml-2 text-zinc-300">Консалтинг и сертификация</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox"
+                                    class="w-4 h-4 text-yellow-600 bg-zinc-950 border-zinc-700 rounded focus:ring-yellow-600">
+                                <span class="ml-2 text-zinc-300">Доставка</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox"
+                                    class="w-4 h-4 text-yellow-600 bg-zinc-950 border-zinc-700 rounded focus:ring-yellow-600">
+                                <span class="ml-2 text-zinc-300">Финансовые услуги</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-zinc-300">Сообщение</label>
+                        <textarea rows="4"
+                            class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-yellow-600 transition-colors"
+                            placeholder="Расскажите о вашем проекте..."></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full btn-primary px-8 py-4 rounded-lg text-zinc-950 font-bold text-lg">
+                        Отправить заявку
+                    </button>
+
+                    <p class="text-sm text-zinc-500 text-center">
+                        Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Footer -->
+    <footer id="contacts" class="bg-zinc-950 border-t border-zinc-800 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 gradient-gold rounded-lg flex items-center justify-center">
+                            <i data-lucide="package" class="w-6 h-6 text-zinc-950"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-gradient-gold">Procargo</span>
+                    </div>
+                    <p class="text-zinc-400 mb-6 max-w-md">
+                        Профессиональные логистические и консалтинговые услуги в Дубае. Ваш надёжный партнёр для роста
+                        бизнеса в регионе GCC.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center hover:border-yellow-600 transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center hover:border-yellow-600 transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center hover:border-yellow-600 transition-colors">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://t.me/procargo"
+                            class="w-10 h-10 bg-zinc-900 border border-zinc-800 rounded-lg flex items-center justify-center hover:border-yellow-600 transition-colors">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Услуги</h4>
+                    <ul class="space-y-2 text-zinc-400">
+                        <li><a href="#services" class="hover:text-white transition-colors">Склад в Дубае</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Таможенное оформление ОАЭ</a>
+                        </li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Фулфилмент Дубай</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Регистрация товара</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Доставка GCC</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Контакты</h4>
+                    <ul class="space-y-3 text-zinc-400">
+                        <li class="flex items-start">
+                            <i data-lucide="map-pin" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Dubai, UAE</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="phone" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>+971 XX XXX XXXX</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="mail" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>info@procargo.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-lucide="clock" class="w-5 h-5 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>24/7 Поддержка</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEO Keywords Footer -->
+            <div class="border-t border-zinc-800 pt-8 mb-8">
+                <div class="text-sm text-zinc-600 leading-relaxed">
+                    <p class="mb-2">
+                        <strong class="text-zinc-500">Ключевые услуги:</strong> склад Дубай, таможня ОАЭ, фулфилмент
+                        Дубай, регистрация товара Дубай, логистика ОАЭ, консалтинг Дубай, складское хранение Дубай,
+                        таможенное оформление ОАЭ, доставка GCC, e-commerce фулфилмент, pick and pack Дубай,
+                        сертификация товаров ОАЭ
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-zinc-800 pt-8 text-center text-zinc-500 text-sm">
+                <p>&copy; 2025 Procargo. Все права защищены. Профессиональная логистика и консалтинг в Дубае.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://api.whatsapp.com/send/?phone=996073198&text&type=phone_number&app_absent=0" target="_blank"
+        class="whatsapp-float" aria-label="Связаться в WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 0C7.164 0 0 7.164 0 16c0 2.828.736 5.484 2.012 7.796L0 32l8.428-2.012A15.93 15.93 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.2c-2.508 0-4.94-.708-7.052-2.012l-.508-.3-5.244 1.252 1.252-5.244-.3-.508A13.13 13.13 0 012.8 16C2.8 8.708 8.708 2.8 16 2.8S29.2 8.708 29.2 16 23.292 29.2 16 29.2zm7.228-9.868c-.396-.196-2.34-1.156-2.7-1.288-.364-.132-.628-.196-.892.196-.264.396-1.024 1.288-1.256 1.552-.228.264-.46.3-.856.1-.396-.196-1.672-.616-3.184-1.964-1.176-1.048-1.972-2.344-2.204-2.74-.228-.396-.024-.612.172-.808.176-.176.396-.46.596-.688.196-.228.264-.396.396-.66.132-.264.068-.496-.032-.688-.1-.196-.892-2.148-1.22-2.94-.324-.772-.652-.668-.892-.68-.228-.012-.492-.016-.756-.016s-.692.1-.056 1.156c-.364.396-1.388 1.356-1.388 3.308s1.42 3.836 1.62 4.1c.196.264 2.796 4.268 6.776 5.984.948.408 1.688.652 2.264.836.952.3 1.816.256 2.5.156.764-.112 2.34-.956 2.668-1.88.328-.924.328-1.716.228-1.88-.1-.168-.364-.268-.76-.464z" />
+        </svg>
+    </a>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+
+        // Reinitialize icons after any dynamic content changes
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+
+</html>
